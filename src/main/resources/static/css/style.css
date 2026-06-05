@@ -1,0 +1,105 @@
+:root {
+    --app-bg: #f4f7fb;
+    --panel-bg: #ffffff;
+    --text-muted-soft: #667085;
+    --border-soft: #d9e2ec;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+.app-body {
+    background: var(--app-bg);
+    color: #172033;
+}
+
+.navbar-brand {
+    letter-spacing: 0;
+}
+
+.feature-panel,
+.form-card,
+.content-panel,
+.stat-card {
+    background: var(--panel-bg);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    box-shadow: 0 14px 40px rgba(23, 32, 51, 0.08);
+}
+
+.feature-card {
+    height: 100%;
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    padding: 1.25rem;
+    background: #fbfdff;
+}
+
+.feature-card p {
+    margin-bottom: 0;
+    color: var(--text-muted-soft);
+}
+
+.content-panel {
+    padding: 1.25rem;
+}
+
+.stat-card {
+    padding: 1.25rem;
+}
+
+.stat-card span {
+    display: block;
+    color: var(--text-muted-soft);
+    font-size: 0.92rem;
+}
+
+.stat-card strong {
+    display: block;
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-top: 0.35rem;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    color: #475467;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.reason-cell {
+    min-width: 220px;
+    max-width: 360px;
+}
+
+.badge {
+    font-weight: 600;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #344054;
+}
+
+@media (max-width: 767.98px) {
+    .content-panel {
+        padding: 0.75rem;
+    }
+
+    .stat-card strong {
+        font-size: 1.6rem;
+    }
+}
