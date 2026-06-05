@@ -83,14 +83,32 @@ Email: aarav.sharma@example.com
 Password: employee123
 ```
 
-## Run in IntelliJ IDEA
+## Run in Visual Studio Code
 
-1. Open the project folder in IntelliJ IDEA.
-2. Wait for Maven dependencies to import.
-3. Confirm Project SDK is Java 21.
-4. Configure MySQL credentials in `application.properties`.
-5. Run `EmployeeLeaveManagementSystemApplication`.
-6. Visit `http://localhost:8080`.
+1. Open the project folder in Visual Studio Code.
+2. Ensure Java 21, Maven, and MySQL are installed.
+3. Configure MySQL credentials in `src/main/resources/application.properties`.
+4. Create the database by running the SQL scripts:
+
+   * `sql/schema.sql`
+   * `sql/sample-data.sql` (optional)
+   * `sql/seed-10-employees-20-leaves.sql` (for demo data)
+5. Open a terminal in the project root directory.
+6. Run the application using:
+
+```bash
+mvn spring-boot:run
+```
+
+7. Alternatively, run `EmployeeLeaveManagementSystemApplication.java` directly from VS Code.
+8. Visit:
+
+```text
+http://localhost:8080
+```
+
+9. Log in using the configured employee or admin credentials.
+
 
 ## Run with Maven
 
