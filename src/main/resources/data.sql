@@ -1,4 +1,4 @@
-INSERT INTO employee (id, full_name, email, password, department, designation, role)
+INSERT INTO employee (id, fullName, email, password, department, designation, role)
 VALUES
     (1, 'System Administrator', 'admin@leavems.com', 'admin123', 'Human Resources', 'HR Administrator', 'ADMIN'),
     (2, 'Aarav Sharma', 'aarav.sharma@example.com', 'employee123', 'Engineering', 'Software Engineer', 'EMPLOYEE'),
