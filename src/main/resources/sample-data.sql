@@ -1,6 +1,6 @@
 USE employee_leave_db;
 
-INSERT INTO employee (full_name, email, password, department, designation, role)
+INSERT INTO employee (fullName, email, password, department, designation, role)
 VALUES
     ('System Administrator', 'admin@leavems.com', 'admin123', 'Human Resources', 'Admin', 'ADMIN'),
     ('Aarav Sharma', 'aarav.sharma@example.com', 'employee123', 'Engineering', 'Software Engineer', 'EMPLOYEE'),
