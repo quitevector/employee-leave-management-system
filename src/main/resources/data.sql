@@ -1,11 +1,3 @@
-CREATE DATABASE IF NOT EXISTS employee_leave_db;
-USE employee_leave_db;
-
-SET FOREIGN_KEY_CHECKS = 0;
-TRUNCATE TABLE leave_request;
-TRUNCATE TABLE employee;
-SET FOREIGN_KEY_CHECKS = 1;
-
 INSERT INTO employee (id, full_name, email, password, department, designation, role)
 VALUES
     (1, 'System Administrator', 'admin@leavems.com', 'admin123', 'Human Resources', 'HR Administrator', 'ADMIN'),
