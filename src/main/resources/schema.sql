@@ -1,12 +1,6 @@
-CREATE DATABASE IF NOT EXISTS employee_leave_db;
-USE employee_leave_db;
-
-DROP TABLE IF EXISTS leave_request;
-DROP TABLE IF EXISTS employee;
-
 CREATE TABLE employee (
     id BIGINT NOT NULL AUTO_INCREMENT,
-    full_name VARCHAR(255) NOT NULL,
+    fullName VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     department VARCHAR(255) NOT NULL,
